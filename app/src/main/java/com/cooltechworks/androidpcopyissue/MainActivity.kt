@@ -2,8 +2,12 @@ package com.cooltechworks.androidpcopyissue
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.ActionMode
+import android.view.Menu
+import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +27,22 @@ class MainActivity : AppCompatActivity() {
 
         edittext.isLongClickable = false
         edittext.setTextIsSelectable(false)
+
+        edittext.customSelectionActionModeCallback = object : ActionMode.Callback {
+            override fun onDestroyActionMode(p0: ActionMode?) {}
+
+            override fun onCreateActionMode(p0: ActionMode?, p1: Menu?): Boolean {
+                return false
+            }
+
+            override fun onActionItemClicked(p0: ActionMode?, p1: MenuItem?): Boolean {
+                return false
+            }
+
+            override fun onPrepareActionMode(mode: ActionMode, menu: Menu): Boolean {
+                return false
+            }
+        }
     }
 
 
