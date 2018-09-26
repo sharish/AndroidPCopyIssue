@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AndroidPCopyIssue</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ullamcorper ante. Fusce vitae ligula luctus, tristique ante id, pellentesque dui. Morbi in congue magna. In justo ligula, tempor in orci semper, iaculis fringilla justo. Nulla pretium dictum. Sed convallis est a metus sagittis porttitor. Integer egestas vitae justo.</string>
+    <string name="text_view_with_no_copy">Hey! I\'m that TextView who wont let you copy the text I posses. This line is added just to make sure I hold too many words. </string>
+    <string name="edit_text_content">Some content that should not be copied</string>
+</resources>
